@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to top, #e9e9e9, #dfdfee, #d1d7f4, #bdcff9, #a4c9ff);
+    height: 100vh;
+    overflow: hidden;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    -webkit-user-drag: none;
+    gap: 10px;
+}
+img {
+    height: 600px;
+    box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.5);
+}
+input[type=range] {
+    width: 600px;
+    cursor: grab;
+}
+input[type=range]:active {
+    cursor: grabbing;
+}
+button {
+    border: 2px solid black;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: 0.2s filter;
+}
+button:hover {
+    filter: invert(8%);
+}
+#photo-year {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    letter-spacing: 1px;
+}
+#photo {
+    position: relative;
+}
+#title {
+    letter-spacing: 10px;
+    font-size: 1.8rem;
+    margin: 25px 0;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "zgadnij-miesiac",
+  "version": "1.0.0",
+  "description": "Gra w której musisz zgadnąć miesiąc w Polsce po zdjęciu",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "game",
+    "gra",
+    "gry",
+    "monthle",
+    "month",
+    "guess",
+    "the",
+    "wordle",
+    "literalnie"
+  ],
+  "author": "Szymon Gniadek",
+  "license": "MIT"
+}
