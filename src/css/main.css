@@ -2,8 +2,7 @@ body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to top, #e9e9e9, #dfdfee, #d1d7f4, #bdcff9, #a4c9ff);
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
@@ -43,11 +42,17 @@ button:hover {
     text-shadow: 2px 2px 2px #000000;
     letter-spacing: 1px;
 }
-#photo-container {
+#photo {
     position: relative;
 }
 #title {
     letter-spacing: 10px;
     font-size: 1.8rem;
-    margin: 25px 0;
+    margin: 35px 0;
+}
+.correctAnswer {
+    background-color: rgba(132, 255, 132, 0.695);
+}
+.wrongAnswer {
+    background-color: rgba(253, 143, 143, 0.695);
 }

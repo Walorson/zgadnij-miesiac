@@ -2,10 +2,9 @@ import { numberToMonth } from "./month.js";
 import { photos, Photo } from "./photos.js";
 
 const monthInput: any = document.getElementById("month-input");
-const monthName: HTMLElement = document.getElementById("month-name");
+const monthName: any = document.getElementById("month-name");
 const photo: any = document.getElementById("photo");
 const photoYear: any = document.getElementById("photo-year");
-const confirmBtn: any = document.getElementById("confirm-button");
 let photoInfo: Photo;
 
 monthInput.addEventListener("input", () => 
@@ -20,12 +19,3 @@ window.addEventListener("load", () => {
     photo.setAttribute("src", "img/" + photoInfo.url);
     photoYear.textContent = photoInfo.year;
 })
-
-confirmBtn.addEventListener("click", () => {
-    if(monthInput.value == photoInfo.monthNumber) {
-        alert("Zgadłeś!")
-    }
-    else {
-        alert("Nie zgadłeś!!!");
-    }
-});
