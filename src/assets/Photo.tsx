@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { numberToMonth } from "../month";
 import { CorrectAnswer } from "./CorrectAnswer";
 import { WrongAnswer } from "./WrongAnswer";

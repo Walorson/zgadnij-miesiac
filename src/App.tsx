@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './css/main.css'
 import './css/App.css'
 import { Photo } from './assets/Photo'
@@ -7,7 +6,6 @@ import { randomizePhotos } from './random'
 function App() {
   
   const photos: any[] = randomizePhotos();
-  console.log(photos)
 
   return (
     <>
