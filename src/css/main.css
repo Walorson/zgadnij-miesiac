@@ -17,6 +17,7 @@ body {
 img {
     height: 600px;
     box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.5);
+    -webkit-user-drag: none;
 }
 input[type=range] {
     width: 600px;
@@ -24,6 +25,9 @@ input[type=range] {
 }
 input[type=range]:active {
     cursor: grabbing;
+}
+input[type=range]:disabled {
+    cursor: auto;
 }
 button {
     border: 2px solid black;

@@ -1,6 +1,6 @@
 import { photos, Photo } from "./photos";
 
-const ROUND_COUNT: number = 5;
+const ROUND_COUNT: number = 1;
 
 export function randomizePhotos(): Photo[]
 {
