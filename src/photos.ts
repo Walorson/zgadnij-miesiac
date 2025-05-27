@@ -133,5 +133,6 @@ export const photos = [
     new Photo("20181025_162824.jpg", 2018, 10, 25),
     new Photo("20181024_111312.jpg", 2018, 10, 24),
     new Photo("20180510_123030.jpg", 2018, 5, 10),
-    new Photo("20180511_153241.jpg", 2018, 5, 11)
+    new Photo("20180511_153241.jpg", 2018, 5, 11),
+    new Photo("DSCF0184.jpg", 2014, 8, 7)
 ];
