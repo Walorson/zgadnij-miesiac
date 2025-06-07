@@ -33,7 +33,7 @@ export const Photo = (props: any) => {
     return (
         <div className="photo">
             <div id="photo">
-                <img src={"./public/img/"+props.photo.url} />
+                <img src={"./img/"+props.photo.url} />
                 <div id="photo-year">{props.photo.year}</div>
             </div>
             <input type="range" min="1"  max="12" id="month-input" defaultValue="6" onInput={(e) => updateMonthName(e)} disabled={endRound ? true : false}/>
