@@ -1,8 +1,11 @@
-export function numberToMonth(num: number) 
+type month = "Styczeń" | "Luty" | "Marzec" | "Kwiecień" | "Maj" | "Czerwiec" | "Lipiec" | "Sierpień" | "Wrzesień" | "Październik" | "Listopad" | "Grudzień";
+type month2 = "Stycznia" | "Lutego" | "Marca" | "Kwietnia" | "Maja" | "Czerwca" | "Lipca" | "Sierpnia" | "Września" | "Października" | "Listopada" | "Grudnia";
+
+export function numberToMonth(num: number): month
 {
     switch(num) 
     {
-        case 1: return "Styczeń";
+        default: return "Styczeń";
         case 2: return "Luty";
         case 3: return "Marzec";
         case 4: return "Kwiecień";
@@ -17,11 +20,11 @@ export function numberToMonth(num: number)
     }
 }
 
-export function numberToMonth2(num: number)
+export function numberToMonth2(num: number): month2
 {
     switch(num) 
     {
-        case 1: return "Stycznia";
+        default: return "Stycznia";
         case 2: return "Lutego";
         case 3: return "Marca";
         case 4: return "Kwietnia";

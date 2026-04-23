@@ -1,10 +1,10 @@
 import { numberToMonth } from "./month.js";
 import { photos, Photo } from "./photos.js";
 
-const monthInput: any = document.getElementById("month-input");
-const monthName: any = document.getElementById("month-name");
-const photo: any = document.getElementById("photo");
-const photoYear: any = document.getElementById("photo-year");
+const monthInput: HTMLInputElement = document.getElementById("month-input")! as HTMLInputElement;
+const monthName: HTMLElement = document.getElementById("month-name")!;
+const photo: HTMLElement = document.getElementById("photo")!;
+const photoYear: HTMLElement = document.getElementById("photo-year")!;
 let photoInfo: Photo;
 
 monthInput.addEventListener("input", () => 
@@ -17,5 +17,5 @@ window.addEventListener("load", () => {
 
     photoInfo = photos[rand];
     photo.setAttribute("src", "img/" + photoInfo.url);
-    photoYear.textContent = photoInfo.year;
+    photoYear.textContent = String(photoInfo.year);
 })
