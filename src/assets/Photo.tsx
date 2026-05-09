@@ -3,19 +3,18 @@ import { numberToMonth } from "../month";
 import { CorrectAnswer } from "./CorrectAnswer";
 import { WrongAnswer } from "./WrongAnswer";
 
-export const Photo = (props: any) => {
-    const [isCorrect, setIsCorrect] = useState<Boolean>(null);
-    const [endRound, setEndRound] = useState<Boolean>(false);
+export const Photo = (props) => {
+    const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+    const [endRound, setEndRound] = useState<boolean>(false);
 
-    function updateMonthName(e: any): void
+    function updateMonthName(e: React.FormEvent<HTMLInputElement>): void
     {
-        document.getElementById("month-name").textContent = numberToMonth(Number(e.target.value));   
+        document.getElementById("month-name")!.textContent = numberToMonth(Number(e.currentTarget.value))!;   
     }
 
     function checkAnswer(): void
     {
-        //@ts-ignore
-        const monthNumber: number = document.getElementById("month-input").value;
+        const monthNumber: number = Number((document.getElementById("month-input") as HTMLInputElement).value);
         if(monthNumber == props.photo.monthNumber) {
             setIsCorrect(true);
         }

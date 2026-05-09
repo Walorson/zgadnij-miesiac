@@ -5,7 +5,7 @@ import { randomizePhotos } from './random'
 
 function App() {
   
-  const photos: Photo[] = randomizePhotos();
+  const photos = randomizePhotos();
 
   return (
     <>
