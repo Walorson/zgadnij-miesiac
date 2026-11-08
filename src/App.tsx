@@ -1,5 +1,6 @@
 import './css/main.css'
 import './css/App.css'
+import { useRef } from 'react'
 import { Photo } from './assets/Photo'
 import { randomizePhotos } from './random'
 

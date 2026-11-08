@@ -1,0 +1,9 @@
+.magnifier {
+    position: absolute;
+    pointer-events: none;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to top, #e9e9e9, #dfdfee, #d1d7f4, #bdcff9, #a4c9ff);
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}

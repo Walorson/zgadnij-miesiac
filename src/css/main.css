@@ -52,7 +52,7 @@ button:hover {
 #title {
     letter-spacing: 10px;
     font-size: 1.8rem;
-    margin: 35px 0;
+    margin: 15px 0;
 }
 .correctAnswer {
     background-color: rgba(132, 255, 132, 0.695);

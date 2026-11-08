@@ -2,10 +2,13 @@ import { useEffect, useState } from "react";
 import { numberToMonth } from "../month";
 import { CorrectAnswer } from "./CorrectAnswer";
 import { WrongAnswer } from "./WrongAnswer";
+import Magnifier from "./Magnifier";
+import { useRef } from "react";
 
 export const Photo = (props) => {
     const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
     const [endRound, setEndRound] = useState<boolean>(false);
+    const imgRef = useRef<HTMLImageElement | null>(null);
 
     function updateMonthName(e: React.FormEvent<HTMLInputElement>): void
     {
@@ -32,7 +35,10 @@ export const Photo = (props) => {
     return (
         <div className="photo">
             <div id="photo">
-                <img src={"./img/"+props.photo.url} />
+                <Magnifier 
+                    src={"./img/" + props.photo.url} 
+                    imgRef={imgRef} 
+                />
             </div>
             <input type="range" min="1"  max="12" id="month-input" defaultValue="6" onInput={(e) => updateMonthName(e)} disabled={endRound ? true : false}/>
             <div id="month-name">Czerwiec</div>
