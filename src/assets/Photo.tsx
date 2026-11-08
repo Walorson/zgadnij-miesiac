@@ -4,6 +4,7 @@ import { CorrectAnswer } from "./CorrectAnswer";
 import { WrongAnswer } from "./WrongAnswer";
 import Magnifier from "./Magnifier";
 import { useRef } from "react";
+import "../css/Slider.css";
 
 export const Photo = (props) => {
     const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
@@ -40,7 +41,7 @@ export const Photo = (props) => {
                     imgRef={imgRef} 
                 />
             </div>
-            <input type="range" min="1"  max="12" id="month-input" defaultValue="6" onInput={(e) => updateMonthName(e)} disabled={endRound ? true : false}/>
+            <input type="range" min="1"  max="12" className="season-slider" id="month-input" defaultValue="6" onInput={(e) => updateMonthName(e)} disabled={endRound ? true : false}/>
             <div id="month-name">Czerwiec</div>
             <button onClick={endRound ? () => location.reload() : () => checkAnswer()}>{endRound == false ? "Zatwierdź" : <i>Kolejne Zdjęcie</i>}</button>
             { isCorrect == true ? 

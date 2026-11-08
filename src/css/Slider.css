@@ -1,0 +1,52 @@
+.season-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 14px;
+  border-radius: 7px;
+  outline: none;
+
+  background: linear-gradient(
+    to right, 
+    #3b82f6 0%,     /* Zima */
+    #10b981 30%,    /* Wiosna */
+    #facc15 50%,    /* Lato */
+    #ef4444 80%,    /* Jesień */
+    #3b82f6 100%    /* Zima */
+  );
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.season-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  border: 3px solid #3b82f6;
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+.season-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+/* FIREFOX */
+.season-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  border: 3px solid #3b82f6;
+  transition: transform 0.1s ease;
+}
+
+.season-slider::-moz-range-thumb:hover {
+  transform: scale(1.15);
+}
