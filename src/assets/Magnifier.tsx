@@ -17,7 +17,7 @@ const Magnifier: React.FC<MagnifierProps> = ({
   zoomLevel = 2,
   magnifierWidth = 160,
   magnifierHeight = 100,
-  className = '',
+  className = 'photo',
   imgRef: externalImgRef,
 }) => {
   const [showMagnifier, setShowMagnifier] = useState<boolean>(false);
@@ -65,7 +65,6 @@ const Magnifier: React.FC<MagnifierProps> = ({
         src={src}
         alt={alt}
         className={className}
-        style={{ display: 'block', width: '100%', height: 'auto' }}
       />
 
       {showMagnifier && (
