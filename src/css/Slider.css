@@ -33,6 +33,11 @@
 
 .season-slider::-webkit-slider-thumb:hover {
   transform: scale(1.15);
+  cursor: grab;
+}
+
+.season-slider::-webkit-slider-thumb:active {
+    cursor: grabbing;
 }
 
 /* FIREFOX */
@@ -49,4 +54,16 @@
 
 .season-slider::-moz-range-thumb:hover {
   transform: scale(1.15);
+}
+
+input[type=range] {
+    width: 600px;
+    cursor: grab;
+}
+input[type=range]:active {
+    cursor: grabbing;
+}
+input[type=range]:disabled {
+    cursor: auto;
+    filter: grayscale(100%);
 }
