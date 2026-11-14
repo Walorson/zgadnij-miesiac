@@ -1,4 +1,5 @@
-import React, { useState, useRef, MouseEvent } from 'react';
+import React, { useState, useRef } from 'react';
+import type { MouseEvent } from "react";
 import '../css/magnifier.css'
 
 interface MagnifierProps {
@@ -15,8 +16,8 @@ const Magnifier: React.FC<MagnifierProps> = ({
   src,
   alt = 'Zdjęcie do zgadnięcia',
   zoomLevel = 2,
-  magnifierWidth = 160,
-  magnifierHeight = 100,
+  magnifierWidth = 190,
+  magnifierHeight = 120,
   className = 'photo',
   imgRef: externalImgRef,
 }) => {

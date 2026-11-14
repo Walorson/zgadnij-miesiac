@@ -30,12 +30,12 @@ body {
 #title {
     letter-spacing: 10px;
     font-size: 1.8rem;
-    margin: 24px 0;
+    margin: 20px 0;
     font-family: "Comic Helvetic Heavy";
 }
 
 .photo {
-    height: 75vh;
+    height: 73vh;
     box-shadow: 0px 0px 19px -1px rgba(0, 0, 0, 0.5);
     -webkit-user-drag: none;
 }

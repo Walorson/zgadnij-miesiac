@@ -12,7 +12,7 @@ export class Photo {
     }
 }
 
-export const photos = [
+export const photos: Photo[] = [
     new Photo("1.jpg", 2014, 8, 7),
     new Photo("2.jpg", 2014, 8, 7),
     new Photo("3.jpg", 2016, 5, 23),
