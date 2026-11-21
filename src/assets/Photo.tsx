@@ -9,7 +9,7 @@ export const Photo = (props) => {
         <div className="photo">
             <div id="photo">
                 <Magnifier 
-                    src={"./img/" + props.photo.url} 
+                    src={props.photo.url} 
                     imgRef={imgRef} 
                 />
             </div>
